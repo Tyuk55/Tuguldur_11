@@ -1,8 +1,15 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+
 export default function ContactPage() {
+    const router = useRouter();
     return (
         <div className="h-screen w-screen bg-black flex  justify-around items-center">
             <div className="w-1/10 h-full">
-                <a href="" className="w-36 h-16 bg-blue-300"> Back</a>
+                <button className="w-36 h-16 bg-blue-300" onClick={() => router.back()}>
+                    Back
+                </button>
             </div>
             
             <div className="w-7/10 h-4/5 bg-white flex ">

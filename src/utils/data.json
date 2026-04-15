@@ -289,7 +289,7 @@
         "created_at" : "2026-03-11"
     },
     {   
-        "id" : 5,
+        "id" : 25,
         "firstName" : "Erkhem",
         "lastName" : "Ganzorig",
         "email" : "Nest20271014@nhs.edu.mn",
@@ -298,6 +298,78 @@
         "password" : "12345678",
         "point" : 100,
         "type" : "student",
+        "created_at" : "2026-03-11"
+    },
+    {   
+        "id" : 26,
+        "firstName" : "Adiyakhuu",
+        "lastName" : "Bat-Erdene",
+        "email" :"Adiyakhuu@nhs.edu.mn",
+        "age" : 49,
+        "Country" : "Mongolia",
+        "password" : "12345678",
+        "point" : 100,
+        "type" : "Teacher",
+        "created_at" : "2026-03-11"
+    },
+    {   
+        "id" : 27,
+        "firstName" : "Azjargal",
+        "lastName" : "GanBold",
+        "email" :"Azjargal@nhs.edu.mn",
+        "age" : 24,
+        "Country" : "Mongolia",
+        "password" : "12345678",
+        "point" : 100,
+        "type" : "Teacher",
+        "created_at" : "2026-03-11"
+    },
+    {   
+        "id" : 28,
+        "firstName" : "Dul",
+        "lastName" : "Bold",
+        "email" :"Dul@nhs.edu.mn",
+        "age" : 29,
+        "Country" : "Mongolia",
+        "password" : "12345678",
+        "point" : 100,
+        "type" : "Teacher",
+        "created_at" : "2026-03-11"
+    },
+    {   
+        "id" : 29,
+        "firstName" : "lawakele",
+        "lastName" : "Taioto",
+        "email" :"lawakele@nhs.edu.mn",
+        "age" : 64,
+        "Country" : "Mongolia",
+        "password" : "12345678",
+        "point" : 100,
+        "type" : "Teacher",
+        "created_at" : "2026-03-11"
+    },
+    {   
+        "id" : 30,
+        "firstName" : "javzandulam",
+        "lastName" : "Gan-Erdene",
+        "email" :"javzandulam@nhs.edu.mn",
+        "age" : 25,
+        "Country" : "Mongolia",
+        "password" : "12345678",
+        "point" : 100,
+        "type" : "Teacher",
+        "created_at" : "2026-03-11"
+    },
+    {   
+        "id" : 31,
+        "firstName" : "Barhasbold",
+        "lastName" : "Okhninoo",
+        "email" :"Barhasbold@nhs.edu.mn",
+        "age" : 30,
+        "Country" : "Mongolia",
+        "password" : "12345678",
+        "point" : 100,
+        "type" : "Teacher",
         "created_at" : "2026-03-11"
     }
 ]
