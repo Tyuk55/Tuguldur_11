@@ -36,7 +36,7 @@ export default function Home() {
           filteredData.map((item, index) => (
             <div
               key={index}
-              className="w-80 h-72 rounded-xl bg-white text-black p-6 border-2 border-black shadow-xl"
+              className="w-80 h-96 rounded-xl bg-white text-black p-6 border-2 border-black shadow-xl"
             >
               <div className="flex justify-between items-center">
                 <p className="font-bold">{item.firstName}</p>
@@ -51,13 +51,13 @@ export default function Home() {
                   {item.type === "student" ? "Student" : "Teacher"}
                 </div>
               </div>
-
+              <img className="" src={item.Image} alt="zurag" />    
               <p><b>Email:</b> {item.email}</p>
               <p><b>Age:</b> {item.age}</p>
               <p><b>Country:</b> {item.country}</p>
               <p><b>Points:</b> {item.point}</p>
               <p><b>Created:</b> {item.created_at}</p>
-
+                  
               <button className="w-20 h-10 bg-red-600 text-white rounded-lg mt-2">
                 Delete
               </button>
