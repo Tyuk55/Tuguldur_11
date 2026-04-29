@@ -3,6 +3,11 @@ export default function ContentPage() {
         <div class="w-screen h-screen bg-pink-300">
         <div class="w-full h-16 bg-white flex justify-between items-center">
             <div class="w-96 h-16 flex justify-between items-center">
+                 <div className="w-1/10 h-full">
+                <button className="w-36 h-16 bg-blue-300" onClick={() => router.back()}>
+                    Back
+                </button>
+            </div>
                 <div class="w-32 h-16 flex justify-center items-center text-black">About our factory</div>
                 <div class="w-24 h-16 flex justify-center items-center text-black">Blog</div>
                 <div class="w-24 h-16 flex justify-center items-center text-black">Contacts</div>

@@ -5,11 +5,17 @@ import DataJson from "../../utils/data.json";
 export default function Home() {
   const [search, setSearch] = useState("");
 
+  <div className="w-1/10 h-full">
+      <button className="w-36 h-16 bg-blue-300" onClick={() => router.back()}>
+          Back
+      </button>
+  </div>
+
   // 🔍 FILTER DATA
   const filteredData = DataJson.filter((item) =>
     item.firstName.toLowerCase().includes(search.toLowerCase())
   );
-
+  
   return (
     <div className="w-full p-6 bg-white">
 
