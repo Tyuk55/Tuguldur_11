@@ -18,11 +18,11 @@ export default function ContactPage() {
                 </div>
                 <div className="w-[45%] h-full flex flex-col border-2 border-gray-300">
                     <div className="w-full h-1/2 flex flex-col justify-center items-center text-8xl font-bold text-black ml-2">
-                        Let's get in touch
+                        Lets get in touch
                     </div>
                     <div className="w-full h-[40%] ">
                         <div className="w-full h-2/5 text-5xl  text-black flex items-center justify-center ml-2">
-                            Don't be afraid to say hello to us!
+                            Dont be afraid to say hello to us!
                         </div>
                         <div className="w-full h-1/5 flex flex-col justify-center ml-4">
                             <p className="text-lg text-gray-400 ">Phone:</p>
@@ -49,7 +49,7 @@ export default function ContactPage() {
                         </div>
                         <div className="w-full h-1/2 flex justify-center mt-16">
                             <img src="https://www.mydoorsign.com/img/lg/L/right-arrow-door-label-lb-2117-r.png " className=" ml-4w-1/2 h-16"></img>
-                            <div className="text-2xl text-gray-400  ml-4">Great we are excited to hear from you and let's start something</div>
+                            <div className="text-2xl text-gray-400  ml-4">Great we are excited to hear from you and let s start something</div>
                         </div>
                     </div>
                     <div className="w-full h-1/2 flex bg-sky-300 flex-col">
