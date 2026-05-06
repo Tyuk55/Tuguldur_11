@@ -12,12 +12,16 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4">
       
+      <button className="w-36 h-16 bg-blue-300" onClick={() => router.back()}>
+        Back
+      </button>
+
       {/* 🔍 SEARCH */}
       <div className="max-w-6xl mx-auto mb-10 flex justify-center">
         <input
           type="text"
           placeholder="Search by name..."
-          className="w-full md:w-96 h-12 border border-gray-300 rounded-full px-5 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="w-full text-black md:w-96 h-12 border border-gray-300 rounded-full px-5 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
