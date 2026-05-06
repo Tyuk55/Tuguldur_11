@@ -76,7 +76,7 @@ export default function ContentPage() {
 
       {/* ── Hero Banner ── */}
       <section className="max-w-7xl mx-auto px-6 mt-8 rounded-2xl overflow-hidden flex bg-white shadow-sm border border-stone-100">
-        <img
+        <Image
           className="w-2/5 h-80 object-cover"
           src="https://media.istockphoto.com/id/1180931397/photo/alluring-woman-dressed-in-a-posh-jewelry-set-of-necklace-ring-and-earrings-elegant-evening.jpg?s=612x612&w=0&k=20&c=miNpkI_ekZ8HoC0U9NhHNacsgcdq8xIFxR-n0zjO5p8="
           alt="Jewelry model"
@@ -107,7 +107,7 @@ export default function ContentPage() {
           {[...products, ...products].map((item, i) => (
             <div key={i} className="group flex flex-col items-center gap-2 cursor-pointer">
               <div className="w-full aspect-square bg-stone-100 rounded-xl border border-stone-200 flex items-center justify-center overflow-hidden group-hover:border-amber-400 group-hover:shadow-md transition-all">
-                <img
+                <Image
                   src={item.src}
                   alt={item.name}
                   className="w-16 h-16 object-contain group-hover:scale-110 transition-transform duration-300"

@@ -327,7 +327,7 @@ export default function Home() {
 
           {/* Image — swap src for your own */}
           <div className="image-slot">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYQe7sk8paP8GwcE7D6iEMSmj82HEVN8lZg&s" alt="Hero" />
+            <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYQe7sk8paP8GwcE7D6iEMSmj82HEVN8lZg&s" alt="Hero" />
             <span className="image-label">Featured</span>
           </div>
 

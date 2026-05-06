@@ -54,7 +54,7 @@ export default function DataPage() {
               >
                 {/* Profile image */}
                 <div className="relative">
-                  <img
+                  <Image
                     src={item.Image}
                     alt={item.firstName}
                     className="w-full h-36 object-cover"
@@ -89,7 +89,7 @@ export default function DataPage() {
                   <div className="mt-3 grid grid-cols-2 gap-2">
                     {["Item 1", "Item 2"].map((label) => (
                       <div key={label} className="rounded-lg overflow-hidden border border-stone-100 flex flex-col">
-                        <img src={item.Image} alt={label} className="w-full h-12 object-cover" />
+                        <Image src={item.Image} alt={label} className="w-full h-12 object-cover" />
                         <span className="text-[11px] text-center text-stone-400 py-0.5">{label}</span>
                       </div>
                     ))}
