@@ -27,10 +27,10 @@ export default function ContactPage() {
               Get in touch
             </p>
             <h1 className="text-4xl font-semibold text-stone-800 leading-tight mb-4">
-              Let's start a conversation
+              Lets start a conversation
             </h1>
             <p className="text-stone-400 text-sm leading-relaxed">
-              Don't be afraid to say hello — we'd love to hear from you.
+              Dont be afraid to say hello — we would love to hear from you.
             </p>
           </div>
 
@@ -54,7 +54,7 @@ export default function ContactPage() {
         {/* ── Right: Contact form ── */}
         <div className="md:w-1/2 p-10 bg-stone-50">
           <h2 className="text-xl font-semibold text-stone-800 mb-1">Send us a message</h2>
-          <p className="text-sm text-stone-400 mb-7">We'll get back to you as soon as possible.</p>
+          <p className="text-sm text-stone-400 mb-7">We will get back to you as soon as possible.</p>
 
           <div className="space-y-4">
             <div>
