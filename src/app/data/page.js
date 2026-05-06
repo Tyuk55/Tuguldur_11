@@ -106,7 +106,7 @@ export default function DataPage() {
         ) : (
           <div className="flex flex-col items-center justify-center py-24 text-stone-400">
             <span className="text-4xl mb-3">🔍</span>
-            <p className="text-base font-medium">No results for "{search}"</p>
+            <p className="text-base font-medium">No results for {search}</p>
             <p className="text-sm mt-1">Try a different name</p>
           </div>
         )}
