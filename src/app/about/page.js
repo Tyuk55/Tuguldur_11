@@ -3,75 +3,111 @@
 import { useRouter } from "next/navigation";
 
 export default function ContactPage() {
-    const router = useRouter();
-    return (
-        <div className="h-screen w-screen bg-black flex  justify-around items-center">
-            <div className="w-1/10 h-full">
-                <button className="w-36 h-16 bg-blue-300" onClick={() => router.back()}>
-                    Back
-                </button>
-            </div>
-            
-            <div className="w-7/10 h-4/5 bg-white flex ">
-                <div className="w-16 h-full bg-white">
-                    <img src="https://media.licdn.com/dms/image/v2/D560BAQEEMW9WWllJQQ/company-logo_200_200/company-logo_200_200/0/1715012998326/logodotcom_logo?e=2147483647&v=beta&t=_NWc6aYWSqq5hIKCc9gX66KLMr59x1sYFIm0-FJaIP4" alt="contact-icon" className="w-12 h-12 mt-4 ml-2"/>
-                </div>
-                <div className="w-[45%] h-full flex flex-col border-2 border-gray-300">
-                    <div className="w-full h-1/2 flex flex-col justify-center items-center text-8xl font-bold text-black ml-2">
-                        Lets get in touch
-                    </div>
-                    <div className="w-full h-[40%] ">
-                        <div className="w-full h-2/5 text-5xl  text-black flex items-center justify-center ml-2">
-                            Dont be afraid to say hello to us!
-                        </div>
-                        <div className="w-full h-1/5 flex flex-col justify-center ml-4">
-                            <p className="text-lg text-gray-400 ">Phone:</p>
-                            <p className="text-xl text-black ">(+2)-88993420</p>
-                        </div>
-                        <div className="w-full h-1/5 flex flex-col justify-center ml-4">
-                            <p className="text-lg text-gray-400 ">Email:</p>
-                            <p className="text-xl text-black ">(+2)-88993420</p>
-                        </div>
-                        <div className="w-full h-1/5 flex flex-col justify-center ml-4">
-                            <p className="text-lg text-gray-400 ">Office</p>
-                            <p className="text-xl text-black ">Ulaanbaatar BZD district </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="w-[45%] h-full bg-white border-2 border-gray-300">
-                    <div className="w-full h-1/2 flex flex-col">
-                        <div className="w-full h-1/2 flex justify-around m-2">
-                            <div className="text-gray-400 text-lg" > Home</div>
-                            <div className="text-gray-400 text-lg" > Service</div>
-                            <div className="text-gray-400 text-lg" > Technology</div>
-                            <div className="text-gray-400 text-lg" > Get in touch</div>
-                            <div className="w-16 h-8 bg-yellow-300 text-gray-400 text-lg flex items-center justify-center">Login</div>
-                        </div>
-                        <div className="w-full h-1/2 flex justify-center mt-16">
-                            <img src="https://www.mydoorsign.com/img/lg/L/right-arrow-door-label-lb-2117-r.png " className=" ml-4w-1/2 h-16"></img>
-                            <div className="text-2xl text-gray-400  ml-4">Great we are excited to hear from you and let s start something</div>
-                        </div>
-                    </div>
-                    <div className="w-full h-1/2 flex bg-sky-300 flex-col">
-                        <div className="w-full h-1/5 text-white text-3xl ml-4 flex items-center">Contact Us</div>
-                        <div className="w-full h-1/5 flex  flex-col justify-center">
-                            <div className=" text-white text-xl ml-8"> Name:</div>
-                            <input className=" w-48 rounded-md mb-4 ml-8 bg-white text-black"/>
-                        </div>
-                        <div className="w-full h-1/5">
-                            <div className=" text-white text-xl ml-8"> Email:</div>
-                            <input className=" rounded-md mb-4 ml-8 bg-white text-black"/>
-                        </div>
-                        <div className="w-full h-1/5">
-                            <div className=" text-white text-xl ml-8"> Phone:</div>
-                            <input className=" rounded-md mb-4 ml-8 bg-white text-black"/>
-                        </div>
-                        <button className="w-24 h-10 bg-blue-400 text-white text-m rounded-2xl ml-8 mt-2">Submit</button>
-                    </div>
-                </div>
-                <div className="w-[8%] h-full"></div>
-            </div>
-        </div>
-    )
+  const router = useRouter();
 
+  return (
+    <div className="min-h-screen bg-stone-100 flex items-center justify-center px-6 py-10">
+
+      {/* Back button — top left */}
+      <button
+        onClick={() => router.back()}
+        className="fixed top-6 left-6 text-sm font-medium text-stone-400 hover:text-stone-700 transition-colors flex items-center gap-1"
+      >
+        ← Back
+      </button>
+
+      {/* Card */}
+      <div className="w-full max-w-4xl bg-white rounded-2xl shadow-md border border-stone-200 overflow-hidden flex flex-col md:flex-row">
+
+        {/* ── Left: Info panel ── */}
+        <div className="md:w-1/2 p-10 flex flex-col justify-between border-b md:border-b-0 md:border-r border-stone-100">
+
+          <div>
+            <p className="text-xs font-semibold tracking-widest uppercase text-amber-700 mb-4">
+              Get in touch
+            </p>
+            <h1 className="text-4xl font-semibold text-stone-800 leading-tight mb-4">
+              Let's start a conversation
+            </h1>
+            <p className="text-stone-400 text-sm leading-relaxed">
+              Don't be afraid to say hello — we'd love to hear from you.
+            </p>
+          </div>
+
+          <div className="mt-10 space-y-5">
+            <div>
+              <p className="text-xs font-medium tracking-widest uppercase text-stone-400 mb-0.5">Phone</p>
+              <p className="text-stone-700 font-medium">(+976) 88-99-3420</p>
+            </div>
+            <div>
+              <p className="text-xs font-medium tracking-widest uppercase text-stone-400 mb-0.5">Email</p>
+              <p className="text-stone-700 font-medium">hello@mywebsite.com</p>
+            </div>
+            <div>
+              <p className="text-xs font-medium tracking-widest uppercase text-stone-400 mb-0.5">Office</p>
+              <p className="text-stone-700 font-medium">Ulaanbaatar, BZD District</p>
+            </div>
+          </div>
+
+        </div>
+
+        {/* ── Right: Contact form ── */}
+        <div className="md:w-1/2 p-10 bg-stone-50">
+          <h2 className="text-xl font-semibold text-stone-800 mb-1">Send us a message</h2>
+          <p className="text-sm text-stone-400 mb-7">We'll get back to you as soon as possible.</p>
+
+          <div className="space-y-4">
+            <div>
+              <label className="block text-xs font-medium tracking-wide uppercase text-stone-500 mb-1.5">
+                Name
+              </label>
+              <input
+                type="text"
+                placeholder="Your full name"
+                className="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-stone-800 text-sm placeholder-stone-300 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-300 transition"
+              />
+            </div>
+
+            <div>
+              <label className="block text-xs font-medium tracking-wide uppercase text-stone-500 mb-1.5">
+                Email
+              </label>
+              <input
+                type="email"
+                placeholder="you@email.com"
+                className="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-stone-800 text-sm placeholder-stone-300 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-300 transition"
+              />
+            </div>
+
+            <div>
+              <label className="block text-xs font-medium tracking-wide uppercase text-stone-500 mb-1.5">
+                Phone
+              </label>
+              <input
+                type="tel"
+                placeholder="+976 __ __ ____"
+                className="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-stone-800 text-sm placeholder-stone-300 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-300 transition"
+              />
+            </div>
+
+            <div>
+              <label className="block text-xs font-medium tracking-wide uppercase text-stone-500 mb-1.5">
+                Message
+              </label>
+              <textarea
+                rows={4}
+                placeholder="How can we help you?"
+                className="w-full px-4 py-2.5 rounded-lg border border-stone-200 bg-white text-stone-800 text-sm placeholder-stone-300 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-300 transition resize-none"
+              />
+            </div>
+
+            <button className="w-full py-2.5 bg-stone-800 text-white text-sm font-medium rounded-lg hover:bg-stone-700 transition-colors mt-1">
+              Send message
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
 }
