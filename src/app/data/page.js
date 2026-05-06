@@ -1,8 +1,10 @@
 "use client";
 import { useState } from "react";
+import { useRouter } from "next/navigation"
 import DataJson from "../../utils/data.json";
 
 export default function Home() {
+  const router = useRouter();
   const [search, setSearch] = useState("");
 
   const filteredData = DataJson.filter((item) =>

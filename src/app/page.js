@@ -327,7 +327,7 @@ export default function Home() {
 
           {/* Image — swap src for your own */}
           <div className="image-slot">
-            <img src="/your-image.jpg" alt="Hero" />
+            <img src="image.png" alt="Hero" />
             <span className="image-label">Featured</span>
           </div>
 
